@@ -1,4 +1,4 @@
-# PE RevTool
+# PE RevTool                               Entry: rev_tool.py
 
 A self-contained reverse-engineering / binary-patching toolkit for Windows
 `.exe` files. Find global variables and strings, disassemble with `objdump`,
