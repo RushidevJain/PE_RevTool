@@ -3,7 +3,7 @@ How to Start: python rev_tool.py shell
 
 A self-contained reverse-engineering / binary-patching toolkit for Windows
 `.exe` files. Find global variables and strings, disassemble with `objdump`,
-patch values on disk, and — the Cheat-Engine-style part — scan a **running**
+patch values on disk, and the Cheat-Engine-style part scan a **running**
 process's memory, narrow it down across multiple passes, and edit or freeze
 values live.
 
@@ -19,12 +19,12 @@ also with no extra packages.
 
 | File                  | What it does |
 |-----------------------|---------------|
-| `rev_tool.py`         | Entry point — CLI subcommands + the interactive shell |
+| `rev_tool.py`         | Entry point: CLI subcommands + the interactive shell |
 | `pe_core.py`          | Pure-Python PE/COFF parser, value typing, string search, file patcher |
 | `disasm_tools.py`     | `objdump -d` wrapper + symbol/xref cross-referencing (+ capstone fallback) |
 | `mem_scan.py`         | Live process memory scanner/editor (the "Cheat Engine" part) |
 | `make_test_target.py` | Generates `test_target.exe`, a tiny safe practice target |
-| `test_target.exe`     | Pre-built practice target — try every command on this first |
+| `test_target.exe`     | Pre-built practice target  try every command on this first |
 
 No `pip install` is required for normal use. `objdump` (for disassembly) and
 `capstone` (an optional fallback if you don't want to install `objdump`) are
