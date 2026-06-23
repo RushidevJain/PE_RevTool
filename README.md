@@ -3,7 +3,7 @@ How to Start: python rev_tool.py shell
 
 A self-contained reverse-engineering / binary-patching toolkit for Windows
 `.exe` files. Find global variables and strings, disassemble with `objdump`,
-patch values on disk, and the Cheat-Engine-style part scan a **running**
+patch values on disk, and the IDA pro, X64DBG & Ghidra style part scan a **running**
 process's memory, narrow it down across multiple passes, and edit or freeze
 values live.
 
